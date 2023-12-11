@@ -141,23 +141,25 @@ nav a:hover::before {
 }
 
 .profile-image {
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	width: 40px;
-	height: 40px;
+	position: relative;
+	/* top: 7px; */
+	/* right: 50px; */
+	top: 5px;
+	margin-right: 80px;
+	width: 50px;
+	height: 50px;
 	border-radius: 50%;
 	border: 2px solid #fff;
 }
 .home {
-	margin-top: 2vw;
+	/* margin-top: 2vw; */
+	margin-top: 4.4vw;
 	background: url("/uploads/img/Group1.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	padding: 150px 3% 50px 3%;
 	width: 100%;
-	/* height: 720px; */
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
@@ -168,7 +170,6 @@ nav a:hover::before {
 	flex-direction: column;
 	color: white;
 	gap: 25px;
-	/* align-items: center; */
 }
 .home p {
 	font-family: var(--h2-font-family);
@@ -216,12 +217,15 @@ nav a:hover::before {
 	align-items: end;
 }
 .home img {
+	position: relative;
+	top: -2vw;
 	width: 29vw;
 	height: 29vw;
 }
 
 .school {
 	position: relative;
+	margin-top: 2vw;
 }
 .school .background {
 	position: absolute;
@@ -230,11 +234,22 @@ nav a:hover::before {
 	z-index: -5;
 }
 .school .school-content {
-	margin-top: 2vw;
 	display: flex;
 	flex-direction: column;
+	gap: 1.3vw;
 	justify-content: center;
 	align-items: center;
+	margin: 4vw 5.21vw 3vw;
+	padding: 3.255vw 5.21vw;
+	border-radius: 35px;
+	background: var(--collection-1-ligh-g);
+	font-family: var(--h2-font-family);
+	font-weight: 400;
+	color: var(--collection-1-color-1-use);
+	font-size: var(--h2-font-size);
+	letter-spacing: var(--h2-letter-spacing);
+	line-height: var(--h2-line-height);
+	font-style: var(--h2-font-style);
 }
 .school h1 {
 	font-family: var(--h1-font-family);
@@ -248,17 +263,6 @@ nav a:hover::before {
 	font-style: var(--h1-font-style);
 }
 .school p {
-	margin: 50px 5.21vw;
-	padding: 50px 5.21vw;
-	border-radius: 35px;
-	background: var(--collection-1-ligh-g);
-	font-family: var(--h2-font-family);
-	font-weight: 400;
-	color: var(--collection-1-color-1-use);
-	font-size: var(--h2-font-size);
-	letter-spacing: var(--h2-letter-spacing);
-	line-height: var(--h2-line-height);
-	font-style: var(--h2-font-style);
 }
 .school p span {
 	font-size: 24px;
@@ -379,6 +383,10 @@ nav a:hover::before {
 	border-radius: 30px;
 	text-align: center;
 	background: var(--collection-1-color-2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.627vw;
 }
 .programs .details h2 {
 	font-family: var(--h1-semi-bold-font-family);
@@ -434,12 +442,6 @@ nav a:hover::before {
 	font-style: var(--h2-medium-font-style);
 }
 
-.programs .apply {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1.627vw;
-}
 .programs .placement {
 	background-color: var(--collection-1-light);
 	margin-top: -15px;
@@ -506,12 +508,12 @@ nav a:hover::before {
 
 .program-adm {
 	position: relative;
-	margin-top: 500px;
+	margin-top: 32.55vw;
 }
 .program-adm .background {
 	position: absolute;
 	width: 100%;
-	top: -700px;
+	top: -45.57vw;
 	z-index: -25;
 }
 .program-adm .program-2 .program-content {
@@ -533,16 +535,16 @@ nav a:hover::before {
 	font-style: var(--h1-font-style);
 }
 .program-adm .program-2 .program-content .tabs {
-	margin-top: 50px;
+	margin-top: 3.255vw;
 	text-align: center;
 	display: flex;
 	flex-direction: row;
-	gap: 40px;
+	gap: 2.6vw;
 	justify-content: center;
 }
 .program-adm .program-2 .program-content .tab {
 	background: var(--collection-1-blue);
-	padding: 30px;
+	padding: 1.953vw;
 	border-radius: 25px;
 	width: 25%;
 	height: 30.04vw;
@@ -571,11 +573,11 @@ nav a:hover::before {
 }
 
 .program-adm .admission {
-	margin-top: 100px;
+	margin-top: 6.51vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 40px;
+	gap: 2.6vw;
 }
 .program-adm .admission h1 {
 	font-family: var(--h1-font-family);
@@ -591,7 +593,7 @@ nav a:hover::before {
 .program-adm .admission .flexes {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 60px;
+	gap: 3.906vw;
 	width: 80%;
 	margin: 50px 10% 50px 10%;
 	text-align: center;
@@ -600,10 +602,13 @@ nav a:hover::before {
 	display: flex;
 	flex-direction: row;
 	gap: 8px;
-	height: 80px;
+	height: 5.21vw;
 }
 .program-adm .admission .flex p {
-	padding: 20px 30px;
+	padding: 1.3vw 1.953vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-radius: 25px;
 	width: 100%;
 	text-align: left;
@@ -733,4 +738,473 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+/* media queries */
+@media only screen and (max-width: 1475px) {
+	.school .background {
+		top: -42.53vw;
+	}
+	.programs .background {
+		top: -21vw;
+	}
+}
+@media only screen and (max-width: 1425px) {
+	.profile-image {
+		margin-right: 70px;
+	}
+	.school .background {
+		top: -40vw;
+	}
+	.programs .background {
+		top: -19vw;
+	}
+}
+@media only screen and (max-width: 1376px) {
+	nav li {
+		margin-right: 0;
+	}
+	.home {
+		padding-bottom: 8vw;
+	}
+	.school .background {
+		top: -37vw;
+	}
+	.success .background {
+		top: -35vw;
+	}
+	.success {
+		margin-top: -2vw;
+	}
+	.programs .background {
+		top: -15vw;
+	}
+	.programs {
+		margin-top: 5vw;
+	}
+}
+@media only screen and (max-width: 1335px) {
+	.school .background {
+		top: -34vw;
+	}
+	.grid {
+		margin-top: 9vw;
+	}
+	.last {
+		margin-top: -1vw;
+	}
+}
+@media only screen and (max-width: 1305px) {
+	.container {
+		padding: 10px 3vw;
+	}
+	.programs .background {
+		top: -14vw;
+	}
+	.programs .placement {
+		padding: 1.8vw 2vw;
+	}
+	.programs .tasks {
+		gap: 1vw;
+	}
+	.programs .tasks .task {
+		gap: 0.1vw;
+	}
+	.program-adm .background {
+		top: -43vw;
+	}
+	.school .background {
+		top: -40vw;
+	}
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 16px;
+		--h1-font-size: 40px;
+		--h2-medium-font-size: 22px;
+		--h1-semi-bold-font-size: 36px;
+	}
+}
+@media only screen and (max-width: 1235px) {
+	.school .background {
+		top: -38vw;
+	}
+	.programs .background {
+		top: -12vw;
+	}
+	.program-adm .admission .flex p {
+		padding: 20px 35px;
+	}
+	.last {
+		margin-top: -4vw;
+	}
+}
+@media only screen and (max-width: 1199px) {
+	.profile-image {
+		width: 45px;
+		height: 45px;
+	}
+	.container {
+		scale: 0.9;
+		padding: 10px 1vw;
+	}
+	.programs .background {
+		top: -10vw;
+	}
+	.programs .tasks .task p {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 1175px) {
+	.school .background {
+		top: -35vw;
+	}
+}
+@media only screen and (max-width: 1150px) {
+	.container {
+		scale: 0.9;
+		padding: 10px 0;
+	}
+	.home {
+		margin-top: 2vw;
+		padding-bottom: 11vw;
+	}
+	.home img {
+		top: 5vw;
+	}
+	.school .background {
+		top: -33vw;
+	}
+	.success .background {
+		top: -29vw;
+	}
+	.success .tabs .tab {
+		height: 36vw;
+	}
+	.programs .background {
+		top: -8vw;
+	}
+	.program-adm .background {
+		top: -35vw;
+	}
+	.program-adm .program-2 .program-content .tab {
+		height: 38vw;
+	}
+}
+@media only screen and (max-width: 1120px) {
+	.container .logo {
+		scale: 0.85;
+	}
+	.programs .placement p {
+		font-size: 20px;
+	}
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 16px;
+		--h1-font-size: 40px;
+		--h2-medium-font-size: 20px;
+		--h1-semi-bold-font-size: 30px;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	nav a {
+		padding: 10px 10px;
+	}
+	.programs .background {
+		top: -5vw;
+	}
+}
+@media only screen and (max-width: 1070px) {
+	.container {
+		gap: 10px;
+		/* justify-content: center; */
+	}
+	.container .logo h1 {
+		font-size: 24px;
+	}
+	nav a {
+		padding: 10px 10px;
+		font-size: 14px;
+	}
+	.login-button,
+	.signup-button {
+		font-size: 14px;
+	}
+	.school .background {
+		top: -30vw;
+	}
+	.programs .background {
+		top: -1vw;
+	}
+}
+@media only screen and (max-width: 1010px) {
+	.program-adm .admission .flexes {
+		gap: 3vw;
+		width: 86%;
+		margin: 50px 7% 50px 7%;
+	}
+	.program-adm .admission .flex p {
+		padding: 30px 35px;
+	}
+	.last img {
+		height: 30px;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.programs .background {
+		top: 2vw;
+	}
+	.programs .details {
+		padding: 3vw 2.5vw;
+		width: 53vw;
+	}
+	.programs .details img {
+		width: 40px;
+	}
+	.school p {
+		font-size: 14px;
+	}
+	.school p span {
+		font-size: 20px;
+	}
+	.grid .background {
+		top: -9.5vw;
+	}
+}
+@media only screen and (max-width: 970px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 14px;
+		--h1-font-size: 34px;
+		--h2-medium-font-size: 16px;
+		--h1-semi-bold-font-size: 30px;
+	}
+	.container .logo img {
+		height: 40px;
+	}
+	.container .logo h1 {
+		font-size: 22px;
+	}
+	.login-button,
+	.signup-button {
+		padding: 6px 10px;
+		font-size: 12px;
+	}
+	.school .background {
+		top: -31vw;
+	}
+	.programs .background {
+		top: -3vw;
+	}
+	.grid .background {
+		top: -11vw;
+	}
+	.grid .col-1 p {
+		font-size: 20px;
+	}
+	.grid .col-1 h1 {
+		font-size: 28px;
+	}
+	.grid .col-2 h2,
+	.grid .col-3 h2 {
+		font-size: 18px;
+	}
+	.grid .col-2 a,
+	.grid .col-3 a {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 950px) {
+	.profile-image {
+		margin-right: 60px;
+	}
+	.success .tabs .tab {
+		height: 40vw;
+	}
+	.success .background {
+		top: -24vw;
+	}
+	.programs .background {
+		top: -1vw;
+	}
+	.programs .apply {
+		padding: 3.5vw;
+		width: 29vw;
+	}
+	.program-adm .admission .flex p {
+		padding: 20px 35px;
+		font-size: 12px;
+	}
+	.program-adm .program-2 .program-content .tab {
+		height: 45vw;
+	}
+	.program-adm .background {
+		top: -29vw;
+	}
+	footer {
+		font-size: 12px;
+	}
+}
+@media only screen and (max-width: 950px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 14px;
+		--h1-font-size: 34px;
+		--h2-medium-font-size: 16px;
+		--h1-semi-bold-font-size: 26px;
+	}
+	.home {
+		margin-top: 0vw;
+	}
+	.grid .background {
+		top: -10vw;
+	}
+}
+@media only screen and (max-width: 890px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 14px;
+		--h1-font-size: 32px;
+		--h2-medium-font-size: 16px;
+		--h1-semi-bold-font-size: 24px;
+	}
+	.profile-image {
+		width: 40px;
+		height: 40px;
+	}
+	.container .logo h1 {
+		font-size: 20px;
+	}
+	.container {
+		gap: 0px;
+		justify-content: space-between;
+	}
+	nav a {
+		padding: 10px 8px;
+		font-size: 12px;
+	}
+	.home .home-info {
+		width: 55%;
+	}
+	.home .home-logo {
+		width: 39%;
+	}
+	.home a {
+		padding: 12px 30px;
+	}
+	.programs .background {
+		top: 1vw;
+	}
+	.program-adm .background {
+		top: -34vw;
+	}
+	.program-adm .admission .flexes {
+		gap: 4vw;
+		margin: 25px 7% 40px 7%;
+	}
+	.program-adm .admission {
+		gap: 0vw;
+	}
+	.last {
+		margin-top: -3vw;
+	}
+	.last img {
+		height: 25px;
+	}
+	.grid .background {
+		top: -6.2vw;
+	}
+}
+@media only screen and (max-width: 865px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 12px;
+		--h1-font-size: 28px;
+		--h2-medium-font-size: 14px;
+		--h1-semi-bold-font-size: 20px;
+	}
+	.school .background {
+		top: -33vw;
+	}
+	.school p {
+		font-size: 12px;
+	}
+	.programs .background {
+		top: -2vw;
+	}
+	.programs .tasks .task p {
+		font-size: 11px;
+	}
+	.program-adm .background {
+		top: -35vw;
+	}
+	.grid .background {
+		top: -10vw;
+	}
+	.grid .col-1 h1 {
+		font-size: 24px;
+	}
+	.grid .col-1 p {
+		font-size: 16px;
+	}
+	.grid .col-2 a,
+	.grid .col-3 a {
+		font-size: 12px;
+	}
+	.grid .col-2 h2,
+	.grid .col-3 h2 {
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 11px;
+		--h1-font-size: 26px;
+		--h2-medium-font-size: 14px;
+		--h1-semi-bold-font-size: 20px;
+	}
+	.profile-image {
+		width: 35px;
+		height: 35px;
+	}
+	.container .logo img {
+		height: 30px;
+	}
+	.container .logo h1 {
+		font-size: 16px;
+	}
+	nav a {
+		padding: 10px 7px;
+		font-size: 10px;
+	}
+	.login-button,
+	.signup-button {
+		padding: 6px 10px;
+		font-size: 10px;
+	}
+	.home {
+		margin-top: -7vw;
+	}
+	.school p {
+		font-size: 11px;
+	}
+	.school p span {
+		font-size: 16px;
+	}
+	.program-adm .admission .flex p {
+		padding: 20px 25px;
+		font-size: 11px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.programs .background {
+		top: 1vw;
+	}
+	.grid .background {
+		top: -8vw;
+	}
+}
+
+/* Tablets */
+@media only screen and (max-width: 768px) {
 }
