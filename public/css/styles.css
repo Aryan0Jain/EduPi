@@ -83,7 +83,7 @@ header {
 	background-color: var(--collection-1-ligh-g);
 	box-shadow: 0 1px 5px 1px var(--collection-1-color-1-use);
 }
-header .hamburger {
+header .hamburger-menu {
 	display: none;
 }
 nav ul {
@@ -153,7 +153,7 @@ nav a:hover::before {
 }
 .home {
 	/* margin-top: 2vw; */
-	margin-top: 4.4vw;
+	margin-top: 2vw;
 	background: url("/uploads/img/Group1.png");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -986,8 +986,8 @@ footer {
 	}
 	.login-button,
 	.signup-button {
-		padding: 6px 10px;
-		font-size: 12px;
+		padding: 8px 7px;
+		font-size: 14px;
 	}
 	.school .background {
 		top: -31vw;
@@ -1071,16 +1071,12 @@ footer {
 		width: 40px;
 		height: 40px;
 	}
-	.container .logo h1 {
-		font-size: 20px;
-	}
 	.container {
 		gap: 0px;
 		justify-content: space-between;
 	}
 	nav a {
 		padding: 10px 8px;
-		font-size: 12px;
 	}
 	.home .home-info {
 		width: 55%;
@@ -1153,6 +1149,75 @@ footer {
 	.grid .col-2 h2,
 	.grid .col-3 h2 {
 		font-size: 16px;
+	}
+}
+/* Hamburger Menu */
+@media only screen and (max-width: 850px) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		padding: 5px 0px;
+	}
+	.container nav {
+		display: none;
+	}
+	.container .hamburger-menu {
+		display: block;
+		position: relative;
+	}
+	.container .hamburger,
+	.ham-background .cross {
+		position: relative;
+		background: transparent;
+		border: none;
+		margin: auto;
+		margin-left: 20px;
+		cursor: pointer;
+	}
+	.container .hamburger svg {
+		margin-top: 4px;
+	}
+	.ham-background {
+		display: none;
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		z-index: 10000;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+	.ham-background .nav-links {
+		z-index: 100;
+		position: absolute;
+		height: 100vh;
+		padding-top: 15px;
+		padding-left: 40px;
+		padding-right: 40px;
+		top: 0;
+		left: 0;
+		box-shadow: 0 1px 5px 1px var(--collection-1-color-1-use);
+		background-color: var(--collection-1-ligh-g);
+		color: var(--collection-1-blue);
+	}
+	.ham-background .list {
+		display: flex;
+		flex-direction: column;
+	}
+	.ham-background .nav-links a {
+		display: block;
+		margin: 5px 0px;
+		padding: 0px 15px;
+		color: var(--collection-1-blue);
+		text-decoration: none;
+		transition: all 200ms;
+		text-underline-offset: 2px;
+	}
+	.ham-background .nav-links a:hover {
+		text-decoration: underline;
+		text-underline-offset: 6px;
+	}
+	.header-buttons {
+		margin: auto;
+		margin-right: 20px;
 	}
 }
 @media only screen and (max-width: 800px) {
