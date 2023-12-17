@@ -1944,15 +1944,10 @@ footer {
 		margin-top: -7vw;
 	}
 	.school .background {
-		top: -130px;
-	}
-}
-@media only screen and (max-width: 380px) {
-	.school .background {
-		top: -110px;
+		top: -145px;
 	}
 	.programs .background {
-		top: -12vw;
+		top: -16vw;
 	}
 	.success .tabs .tab {
 		width: 80%;
@@ -1966,5 +1961,55 @@ footer {
 	}
 	.program-adm .background {
 		top: 355px;
+	}
+}
+@media only screen and (max-width: 371px) {
+	.school p {
+		font-size: 12px;
+	}
+	.school p span {
+		font-size: 16px;
+	}
+	.success .background {
+		top: 0vw;
+	}
+	.success .tabs .tab {
+		padding: 10px;
+		height: 50vw;
+	}
+}
+@media only screen and (max-width: 350px) {
+	.home p {
+		font-size: 10px;
+		text-wrap: wrap;
+	}
+	.school p {
+		font-size: 10px;
+	}
+	.school p span {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 333px) {
+	:root {
+		--h3-font-size: 16px;
+		--h2-font-size: 10px;
+		--h1-font-size: 20px;
+		--h2-medium-font-size: 12px;
+		--h1-semi-bold-font-size: 16px;
+	}
+	.school .school-content {
+		margin: 4vw 2vw 3vw;
+	}
+	.grid .background {
+		top: -30px;
+	}
+	.program-adm .admission .flex p {
+		font-size: 10px;
+		padding: 10px 15px;
+		justify-content: start;
+	}
+	.program-adm .admission .flex img {
+		width: 40px;
 	}
 }
