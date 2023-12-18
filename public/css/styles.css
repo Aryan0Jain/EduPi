@@ -1768,7 +1768,7 @@ footer {
 	}
 	.program-adm .program-2 .program-content h1 {
 		width: 75%;
-		text-wrap: wrap;
+		white-space: pre-wrap;
 	}
 	.program-adm .background {
 		top: 210px;

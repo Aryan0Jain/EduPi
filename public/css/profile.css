@@ -1,164 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+:root {
+	--h3-font-family: "Poppins-Regular", Helvetica;
+	--h3-font-weight: 400;
+	--h3-font-size: 16px;
+	--h3-letter-spacing: 0px;
+	--h3-line-height: normal;
+	--h3-font-style: normal;
+	--h2-font-family: "Poppins-Regular", Helvetica;
+	--h2-font-weight: 400;
+	--h2-font-size: 18px;
+	--h2-letter-spacing: -0.4px;
+	--h2-line-height: 130.49999475479126%;
+	--h2-font-style: normal;
+	--h1-font-family: "Poppins-Bold", Helvetica;
+	--h1-font-weight: 700;
+	--h1-font-size: 50px;
+	--h1-letter-spacing: 1.28px;
+	--h1-line-height: 150%;
+	--h1-font-style: normal;
+	--h2-medium-font-family: "Poppins-Medium", Helvetica;
+	--h2-medium-font-weight: 500;
+	--h2-medium-font-size: 24px;
+	--h2-medium-letter-spacing: -0.48px;
+	--h2-medium-line-height: 130.49999475479126%;
+	--h2-medium-font-style: normal;
+	--h1-semi-bold-font-family: "Poppins-SemiBold", Helvetica;
+	--h1-semi-bold-font-weight: 500;
+	--h1-semi-bold-font-size: 36px;
+	--h1-semi-bold-letter-spacing: 0.74px;
+	--h1-semi-bold-line-height: 150%;
+	--h1-semi-bold-font-style: normal;
+	--drop-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.05);
+	--collection-1-color-1-use: rgba(0, 33, 71, 1);
+	--collection-1-blue: rgba(0, 33, 71, 1);
+	--collection-1-green: rgba(0, 68, 71, 1);
+	--collection-1-ligh-g: rgba(166, 207, 213, 1);
+	--collection-1-light: rgba(223, 253, 225, 1);
+	--collection-1-number: 16px;
+	--collection-1-color: rgba(30, 30, 30, 1);
+	--collection-1-color-2: rgba(254, 254, 254, 1);
+	--collection-1-scroll-color-1: rgba(255, 255, 255, 1);
+	--collection-1-scroll-color-2: rgba(0, 0, 0, 1);
+	--collection-1-scroll-color-3: rgba(253, 189, 25, 1);
+	--collection-1-scroll-color-4: rgba(30, 30, 30, 1);
+	--collection-1-scroll-color-5: rgba(223, 253, 225, 1);
+	--collection-1-scroll-color-6: rgba(0, 68, 71, 1);
+}
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins !important;
 }
-
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
+	background-color: var(--collection-1-light);
+}
+.container {
+	padding: 10px 5%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container .logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 5%;
+	text-wrap: nowrap;
+}
+.container .logo img {
+	height: 50px;
+}
+.container .logo h1 {
+	font-size: 28px;
+	font-weight: 400;
+}
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	color: var(--collection-1-blue);
+	z-index: 999;
+	background-color: var(--collection-1-ligh-g);
+	box-shadow: 0 1px 5px 1px var(--collection-1-color-1-use);
+}
+header .hamburger-menu {
+	display: none;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 }
 
-.profile-info {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+nav li {
+	margin-right: 20px;
 }
 
-.user-details {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  width: 80%;
-  max-width: 900px;
-  animation: fadeIn 0.8s ease-in-out;
+nav a {
+	text-decoration: none;
+	border-radius: 5px;
+	color: var(--collection-1-blue);
+	font-size: 16px;
+	position: relative;
+	padding: 10px 15px;
 }
 
-.user-image {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  grid-row: span 2;
+nav a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	transform: scaleX(0);
+	transform-origin: 0 0;
+	transition: transform 0.3s ease-in-out;
 }
 
-.user-image img {
-  width: 300px;
-  height: 300px;
-  background-size: cover;
-  display: block;
-  border-radius: 50%;
-  transition: transform 0.3s ease-in-out;
+nav a:hover::before {
+	transform: scaleX(1);
 }
 
-.overlay {
-  position: absolute;
-  left: 40%;
-  top: 50%;
-  transform: translateX(-50%);
-  background-color: #4caf50;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.user-card{
-  background-color: #ddd;
-  padding: 30px;
-  border-radius: 30px;
-  font-size: 20px;
-  margin-left:30px ;
-}
-.user-image:hover .overlay {
-  opacity: 1;
+.logout-button {
+	text-decoration: none;
+	color: #000;
+	font-size: 16px;
+	padding: 10px 20px;
+	margin-left: 10px;
+	background: var(--collection-1-light);
+	border-radius: 8px;
 }
 
-.user-text {
-  grid-column: span 1;
-}
-.user-text h1{
-  margin-bottom: 15px;
-}
-.editable-field {
-  margin-bottom: 20px;
-  text-align: left;
-  
+.logout-button:hover {
+	background: #f2f2f2;
+	border-radius: 8px;
 }
 
-.editable-field span {
-  font-size: 22px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 8px;
+.profile {
+	margin: 60px 250px;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	gap: 50px;
+	background-color: white;
 }
-
-.edit-icon {
-  cursor: pointer;
-  font-size: 18px;
-  color: #0077cc;
-  transition: color 0.3s;
+.picture {
 }
-
-.edit-icon:hover {
-  color: #005580;
+.picture-header {
+	/* background-color: rgb(255, 255, 255); */
+	background-color: rgba(33, 40, 50, 0.03);
+	color: var(--collection-1-blue);
+	padding: 10px 15px;
+	font-size: 20px;
 }
-
+.picture-body {
+	margin-top: 30px;
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+	align-items: center;
+}
+.picture-body img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
 .edit-form {
-  margin-left: 30px;
-  margin-top: 20px;
-  grid-column: span 2;
-}
-
-.inputele {
-  display: none;
-  width: 600px;
-  padding: 15px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-sizing: border-box;
-  transition: border-color 0.3s;
-}
-
-.inputele:focus {
-  border-color: #0077cc;
-  outline: none;
-}
-
-.edit-form button {
-  background-color: #0077cc;
-  color: #fff;
-  width: 100%;
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.edit-form button:hover {
-  background: #005580;
-}
-
-.edit-profile-section {
-  opacity: 0;
-  animation: fadeIn 0.8s ease-in-out forwards 0.3s;
-}
-
-.edit-form button:disabled {
-  background-color: #ddd;
-  color: #777;
-  cursor: not-allowed;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+	display: none;
 }
