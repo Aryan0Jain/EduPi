@@ -87,15 +87,15 @@
 			<div class="details">
 				<div class="details-header">Profile Details</div>
 				<div class="details-body">
-					<div class="detail">
+					<div class="detail" id="name">
 						<div class="detail-name">Name:</div>
 						<div class="detail-value"><%= user.name %></div>
 					</div>
-					<div class="detail">
+					<div class="detail" id="email">
 						<div class="detail-name">Email:</div>
 						<div class="detail-value"><%= user.username %></div>
 					</div>
-					<div class="detail">
+					<div class="detail" id="number">
 						<div class="detail-name">Phone Number:</div>
 						<div class="detail-value"><%= user.phoneNumber %></div>
 						<div class="detail-edit">
@@ -111,7 +111,7 @@
 							</svg>
 						</div>
 					</div>
-					<div class="detail">
+					<div class="detail" id="address">
 						<div class="detail-name">Address:</div>
 						<div class="detail-value"><%= user.address %></div>
 						<div class="detail-edit">
@@ -127,7 +127,7 @@
 							</svg>
 						</div>
 					</div>
-					<div class="detail">
+					<div class="detail" id="about">
 						<div class="detail-name">About</div>
 						<div class="detail-value"><%= user.about %></div>
 						<div class="detail-edit">
@@ -143,7 +143,7 @@
 							</svg>
 						</div>
 					</div>
-					<div class="detail">
+					<div class="detail" id="skills">
 						<div class="detail-name">Skills:</div>
 						<div class="detail-value">
 							<% if (user.skills && user.skills.length > 0) { %>
@@ -169,8 +169,8 @@
 							</svg>
 						</div>
 					</div>
-					<div class="detail">
-						<div class="detail-name">Interest</div>
+					<div class="detail" id="interests">
+						<div class="detail-name">Interests:</div>
 						<div class="detail-value">
 							<% if (user.interests && user.interests.length > 0)
 							{ %>
