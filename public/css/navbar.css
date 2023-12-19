@@ -280,6 +280,7 @@ nav a:hover::before {
 	.ham-background {
 		display: none;
 		position: fixed;
+		top: 0px;
 		width: 100vw;
 		height: 100vh;
 		z-index: 10000;
@@ -334,15 +335,16 @@ nav a:hover::before {
 	}
 }
 @media only screen and (max-width: 800px) {
-	.ham-background {
+	/* .ham-background {
 		margin-top: 56px;
-	}
+		top: initial;
+	} */
 }
 
 @media only screen and (max-width: 768px) {
-	.ham-background {
+	/* .ham-background {
 		margin-top: 40px;
-	}
+	} */
 }
 @media only screen and (max-width: 640px) {
 	.login-button,
