@@ -178,12 +178,25 @@
 	z-index: 1100;
 	background-color: var(--collection-1-ligh-g);
 	padding: 30px;
+	padding-top: 60px;
 	border-radius: 4px;
 }
 .edit-form .form .detail-title {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	right: 0px;
+	padding: 5px 0px;
+	background-color: #f2f2f2;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
 	text-align: center;
 	font-size: 24px;
 	color: var(--collection-1-blue);
+}
+.edit-form .form .input-info {
+	color: var(--collection-1-green);
+	font-size: 16px;
 }
 .edit-form .form input {
 	font-size: 16px;
@@ -290,6 +303,28 @@
 		width: 12px;
 	}
 }
+@media only screen and (max-width: 500px) {
+	.edit-form .form {
+		padding: 20px;
+		padding-top: 50px;
+	}
+	.edit-form .form .detail-title {
+		font-size: 18px;
+	}
+	.edit-form .form .input-info {
+		font-size: 12px;
+	}
+	.edit-form .form input {
+		font-size: 12px;
+		width: 250px;
+	}
+	.edit-form .form input[type="file"] {
+		width: 150px;
+	}
+	.edit-form .form button {
+		font-size: 13px;
+	}
+}
 @media only screen and (max-width: 340px) {
 	.profile {
 		width: 285px;
@@ -300,5 +335,22 @@
 	}
 	.details-header {
 		font-size: 16px;
+	}
+	.edit-form .form {
+		padding: 20px;
+		padding-top: 45px;
+	}
+	.edit-form .form .detail-title {
+		font-size: 16px;
+	}
+	.edit-form .form input {
+		font-size: 12px;
+		width: 240px;
+	}
+	.edit-form .form input[type="file"] {
+		width: 145px;
+	}
+	.edit-form .form button {
+		font-size: 12px;
 	}
 }
