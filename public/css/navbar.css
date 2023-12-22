@@ -65,7 +65,8 @@
 	flex-direction: row;
 	align-items: center;
 	gap: 5%;
-	text-wrap: nowrap;
+	/* text-wrap: nowrap; */
+	white-space: nowrap;
 }
 .menu-container .logo img {
 	height: 50px;
@@ -382,6 +383,14 @@ nav a:hover::before {
 	.signup-button,
 	.logout-button {
 		font-size: 12px;
+		padding: 5px 6px;
+	}
+}
+@media only screen and (max-width: 310px) {
+	.login-button,
+	.signup-button,
+	.logout-button {
+		font-size: 10px;
 		padding: 5px 6px;
 	}
 }
