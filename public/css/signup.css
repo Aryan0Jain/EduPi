@@ -93,6 +93,16 @@
 	margin-bottom: 20px;
 	font-size: 18px;
 }
+.registration-form form p {
+	color: #9b9494;
+}
+.registration-form form a {
+	color: #9b9494;
+	text-underline-offset: 5px;
+}
+.registration-form form a:hover {
+	color: #545252;
+}
 
 .registration-form input {
 	width: 100%;
