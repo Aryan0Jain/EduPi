@@ -7,7 +7,7 @@ const multer = require("multer");
 const path = require("path");
 const flash = require("express-flash");
 const expressSession = require("express-session");
-const { User, Register } = require("./database");
+const { User, Register,Contact } = require("./database");
 const bodyParser = require("body-parser");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.json());
@@ -204,6 +204,13 @@ app.post("/", async (req, res) => {
 	const { fullName, phoneNumber } = req.body;
 	const newUser = await Register.create({ fullName, phoneNumber });
 	res.status(201).redirect("/about");
+});
+app.post("/getstarted", async (req, res) => {
+	
+	const { fullName, phoneNumber } = req.body;
+	const newUser = await Contact.create({ fullName, phoneNumber });
+	req.flash('success', 'Thank you for filling up the details! We will connect with you soon.');
+	res.status(201).redirect("/");
 });
 app.post("/fsd", async (req, res) => {
 	const { fullName, email, phoneNumber } = req.body;
