@@ -83,7 +83,7 @@
 					/>
 					<button
 						class="edit-profile-picture"
-						onclick="updateProfile('Picture')"
+						onclick="updateProfile('profileImage')"
 					>
 						Update Profile Picture
 					</button>
@@ -107,7 +107,7 @@
 						</div>
 						<div
 							class="detail-edit"
-							onclick="updateProfile('Number')"
+							onclick="updateProfile('phoneNumber')"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +128,7 @@
 						</div>
 						<div
 							class="detail-edit"
-							onclick="updateProfile('Address')"
+							onclick="updateProfile('address')"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +149,7 @@
 						</div>
 						<div
 							class="detail-edit"
-							onclick="updateProfile('About')"
+							onclick="updateProfile('about')"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +178,7 @@
 						</div>
 						<div
 							class="detail-edit"
-							onclick="updateProfile('Skills')"
+							onclick="updateProfile('skills')"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -208,7 +208,7 @@
 						</div>
 						<div
 							class="detail-edit"
-							onclick="updateProfile('Interests')"
+							onclick="updateProfile('interests')"
 						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -226,7 +226,7 @@
 			</div>
 		</div>
 
-		<div class="edit-form">
+		<form method="post" class="edit-form">
 			<div class="edit-background"></div>
 			<div class="form">
 				<div class="detail-title">Detail Name</div>
@@ -234,6 +234,7 @@
 					Information on how to type/what file to upload
 				</div>
 				<input
+				    id="inputUpdate"
 					type="text"
 					required
 					placeholder="Enter your 'detail' here"
@@ -244,7 +245,7 @@
 					<button class="update-detail">Submit</button>
 				</div>
 			</div>
-		</div>
+		</form>
 		<script src="/js/profile.js"></script>
 		<script src="./js/menu.js"></script>
 		<script
