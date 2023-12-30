@@ -40,5 +40,11 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     phoneNumber: Number,
     
   });
+  const contactSchema = new mongoose.Schema({
+    fullName: String,
+    phoneNumber: Number,
+    
+  });
 exports.User = mongoose.model("User", userSchema);
+exports.Contact = mongoose.model("Contact", contactSchema);
 exports.Register = mongoose.model("Register", registerSchema);
